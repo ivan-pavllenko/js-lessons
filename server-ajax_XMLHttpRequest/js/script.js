@@ -50,7 +50,7 @@
 //? readyState должен быть строго равен === 4, (4- это стадии запроса)
 //? В свойстве status - лежит код статуса
 //? Код статуса 200 говорит что у нас всё хорошо
-//? Мы работаем в json файле, json сервер выдаёт там тоже в json фрмате
+//? Мы работаем в json файле, json сервер выдаёт там тоже в json формате
 //? Чтобы его использовать на клиенте при помощи js я должен его распарсить
 //? Распарсить - превратить json формат в обычные обьект или массив который можно использовать на нашем клиенте внутри js
 //? Команда JSON.parse парсит данные
@@ -97,7 +97,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const request = new XMLHttpRequest(); //? в переменную поместим конструктор нового обьекта new XMLHttpRequest
     request.open("GET", "http://localhost:3000/people"); //? я буду при помощи  Аjax запросов делать GET
     request.setRequestHeader("Content-type", "application/json;charset=utf-8"); //? установим заголовок 
-    request.send();
+    request.send(); //? запрос ушел на сервер
 
     //? Чтобы взаимодействовать с запросом используем обработчик собыий
     request.addEventListener("readystatechange", function () {
