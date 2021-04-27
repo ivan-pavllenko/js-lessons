@@ -51,7 +51,7 @@ let ii = 0;
 
 while (ii < 10) {
   console.log(ii);
-  i++;
+  ii++;
 }
 
 
