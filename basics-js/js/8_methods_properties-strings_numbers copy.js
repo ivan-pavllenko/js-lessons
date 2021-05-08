@@ -80,7 +80,7 @@ console.log(logg.substr(6, 5)); //? будет world
 
 //? Метод round - округляет число до ближайшего целого 
 const num = 12.2;
-console.log(Math.round(num));
+console.log(Math.round(num)); //? будет 12
 
 //! Методы которые переводят число в другую систему изчисления
 

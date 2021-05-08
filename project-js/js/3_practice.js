@@ -104,7 +104,7 @@ function rememberMyfilms() {
     }
 }
 
-// rememberMyfilms();
+rememberMyfilms();
 
 function detectPersonalLevel() {
     if (personalMovieDB.count < 10) {
