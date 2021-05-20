@@ -36,9 +36,9 @@ const options = {
 //? key - получить ключ 
 //? options[key] - получить значение ключа который будет перебираться в цикле
 
-// for (let key in options) {
-//   console.log(`свойство ${key} имеет значение ${options[key]}`);
-// }
+//* for (let key in options) {
+//*   console.log(`свойство ${key} имеет значение ${options[key]}`);
+//* }
 
 //! Запустим код
 //? свойство name имеет значение test
@@ -136,3 +136,17 @@ console.log(border); //? будет black
 
 //?  Всё идет от обьектов
 //?  Строка на базовом уровне является обьектом
+
+
+const codes = {
+  "+7": "Россия",
+  "+38": "Украина",
+  "+1": "США"
+};
+
+for (let code in codes) {
+  let value = codes[code];
+  code = +code; // ..если нам нужно именно число, преобразуем: "+7" -> 7
+
+  console.log(code + ": " + value); // 7, 38, 1 во всех браузерах
+}
