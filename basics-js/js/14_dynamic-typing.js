@@ -87,3 +87,4 @@ console.log(typeof (Boolean('4'))); //? будет boolean
 //? 3-й способ
 
 console.log(typeof (!!'444')); //? будет boolean
+console.log(!!'444'); //? будет true
