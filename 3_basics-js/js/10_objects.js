@@ -148,5 +148,5 @@ for (let code in codes) {
   let value = codes[code];
   code = +code; // ..если нам нужно именно число, преобразуем: "+7" -> 7
 
-  console.log(code + ": " + value); // 7, 38, 1 во всех браузерах
+  console.log(code + ": " + value); // 7: Россия 38: Украина 1: США во всех браузерах
 }
