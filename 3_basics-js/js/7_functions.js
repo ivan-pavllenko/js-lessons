@@ -25,7 +25,7 @@ humanSayHello('Ivan'); //? Hello Ivan!
 //? Когда ф-я вызывается, мы можем дать ей какие то данные которые она будет использовать внутри себя
 //? Пример калькулятор, аргумент 2 и 5
 
-//? Если мы обьявляем перемннную внутри ф-и то снаружи она недоступна, доступна только внутри блока с {}
+//? Если мы обьявляем переменную внутри ф-и то снаружи она недоступна, доступна только внутри блока с {}
 
 function showFirstmassage(text) {
   console.log(text);
@@ -45,8 +45,8 @@ function showFirstmassage(text) {
   num = 10; //? здесь мы используем глобальную пер-ю, мы её не обьявляем
 }
 
-showFirstmassage('Hello world!');
-console.log(num); //? будет Hello world! 10 , внутри ф-и когда она выпонилась у нас было изменено значение num
+showFirstmassage('Hello world!'); //? будет Hello world!
+console.log(num); //? будет 10, внутри ф-и когда она выпонилась у нас было изменено значение num
 
 //? Обращается к глобальной пер-й, она ничего не знает о локальной пер-й
 
@@ -57,7 +57,7 @@ function showFirstmassage(text) {
   let number = 10;
 }
 
-showFirstmassage('Hello world!');
+showFirstmassage('Hello world!'); //? будет Hello world!
 console.log(number); //? будет 20, обращается к глобальной пер-й, она ничего не знает о локальной пер-й
 
 
@@ -71,8 +71,8 @@ function showFirstmassage(text) {
   console.log(numberr);
 }
 
-showFirstmassage('Hello world!');
-console.log(numberr); //? будет Hello world! 10 20
+showFirstmassage('Hello world!'); //? будет Hello world! 10
+console.log(numberr); //? будет  20
 
 //? Если удалить локальную пер-ю let numberr = 10;
 //? Когда дойдёт до команды console.log(numberrr); она сканирует эту ф-ю и внутри себя не найдет пер-ю numberrr, в таком случае эта ф-я начнёт искать на уровень выше и использует глобальную пер-ю
@@ -84,14 +84,14 @@ function showFirstmassage(text) {
   console.log(numberrr);
 }
 
-showFirstmassage('Hello world!');
-console.log(numberrr); //? будет Hello world! 20  20
+showFirstmassage('Hello world!'); //? будет Hello world! 20
+console.log(numberrr); //? будет  20
 
 //? Когда ф-я вызывается, она пытается найти пер-е, если она не находит то она постоянно идет на уровень выше
 //? Замыкание ф-и - это сама ф-я вместе со всеми внешними переменными, которые ей доступны
 
 //! Создаем калькулятор
-//? Аргументов может быть бесконечное количество, сайчас (a, b)
+//? Аргументов может быть бесконечное количество, сейчас (a, b)
 
 function calc(a, b) {
   console.log(a + b);
