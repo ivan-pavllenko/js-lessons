@@ -73,7 +73,7 @@
 //? Аналога для childNodes нет, его создаем вручную 
 
 //? Использовать for each - мы здесь не можем, используем for of
-//? Если при переборе node мы наькнемся на nodeName == '#text' сработает оператор continue
+//? Если при переборе node мы наткнемся на nodeName == '#text' сработает оператор continue
 //? оператор continue - позволяет пропустить тестовые узлы
 
 for (let node of document.body.childNodes) {

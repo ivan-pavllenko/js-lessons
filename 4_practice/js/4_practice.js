@@ -100,7 +100,7 @@ const personalMovieDB = {
     }
 
     //? В консоль браузера вводим
-    // personalMovieDB.writeYourGenres(); //? Вводим названия
+    // personalMovieDB.writeYourGenres();
 
     //? Получаем
     //? Любимый жанр 1 - это Боевик

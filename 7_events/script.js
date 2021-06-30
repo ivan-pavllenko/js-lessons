@@ -10,7 +10,6 @@
 //*   overlay = document.querySelector('.overlay');
 
 
-
 //! в js всего 3 способа назначить обработчики событий 
 
 //!  1-й html атрибут который записывается прямо в верстке (в реальных проектах не используется)
@@ -104,7 +103,6 @@
 
 //* const element = (e) => {
 //*   console.log(e.target);
-
 //* };
 
 //* btn.addEventListener('click', element);
@@ -150,7 +148,6 @@
 //?  <div class="overlay"></div> click
 
 //?  Теперь видно как это событие всплывает наверх
-
 
 //* const element = (e) => {
 //*   console.log(e.currentTarget);
